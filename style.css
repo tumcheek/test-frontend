@@ -279,7 +279,7 @@
     .featured-item:nth-child(5){
         grid-row:6/7;
     }
-    .featured-item:nth-of-type(4),.featured-item:nth-of-type(5){
+    .featured-item:nth-child(4),.featured-item:nth-child(5){
         display: block; 
     }
     .wrapper{
