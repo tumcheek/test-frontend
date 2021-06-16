@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="page">
+    <main class="main-page">
+        <section class="featured">
+            <h2 class="title">Featured images</h2>
+            <ul class="featured-list">
+                <li class="featured-item">
+                    <img class="featured-img" src="in/images/1280px-bernard_harris_and_michael_foale_prepare_to_leave_airlock_-_gpn-2006-000022.jpg" alt="">
+                    <button type="button" class="stars star-regular  "> </button>
+                   
+                        <div class="featured-caption">
+                            <p class='featured-paragraph'>Hubble spies Galactic Traffic Jam</p>
+                            <span class="featured-hashtag">#hubble #galaxy #galacticjam</span>
+                        </div>   
+                </li>
+                <li class="featured-item">
+                    <img class="featured-img" src='in/images/150122-marspan1_c8e503648f53129b84e1873f123c7cb0.nbcnews-fp-1200-630.jpg' alt='' > 
+                    <button type="button" class="stars star-regular  "> </button>
+                        <div class="featured-caption">
+                            <p class='featured-paragraph'>Launch of the ESE/NASA Solar Orbiter</p>
+                            <span class="featured-hashtag">#tess #planet</span>
+                        </div>
+                    
+                </li>
+                <li class="featured-item">
+                    <img class="featured-img" src='in/images/Gulf_Intracoastal_Waterway_Galveston_Bay.jpg' alt='' > 
+                    <button type="button" class="stars star-regular "> </button>
+                        <div class="featured-caption">
+                            <p class='featured-paragraph'>TESS Finds First Earth-size Planet in the Habitavle Zone</p>
+                            <span class="featured-hashtag">#ese #nasa #ship #launch #solarorbiter</span>
+                        </div>
+                    
+                </li>
+                <li class="featured-item">
+                    <img class="featured-img" src='in/images/49048341728_21e121889f_o.jpg' alt='' > 
+                    <button type="button" class="stars star-regular  "> </button>
+                    <div class="featured-caption">
+                        <p class='featured-paragraph'>TESS Finds First Earth-size Planet in the Habitavle Zone</p>
+                        <span class="featured-hashtag">#ese #nasa #ship #launch #solarorbiter</span>
+                    </div>
+                </li>
+                <li class="featured-item">
+                    <img class="featured-img" src='in/images/EQYxPHmU0AEfdX3.jpg' alt='' > 
+                    <button type="button" class="stars star-regular  "> </button>
+                    <div class="featured-caption">
+                        <p class='featured-paragraph'>Launch of the ESE/NASA Solar Orbiter</p>
+                        <span class="featured-hashtag">#tess #planet</span>
+                    </div>
+                </li>
+            </ul>
+            <button class="arrow next" type="button"></button>
+            <button class="arrow back" type="button"></button>
+        </section>
+        <section class="last">
+            <h2 class="title">Last images</h2>
+            <div class="wrapper">
+            <ul class="last-list">
+                <li class="last-item">
+                    <div class="img-wrap"><img class="last-img" src="in/images/potw2009a.jpg" alt=""></div>
+                    <button type="button" class="stars star-regular  "> </button>
+                    <div class="last-caption">
+                        <p class='last-paragraph'>Hubble spies Galactic Traffic Jam</p>
+                        <span class="last-hashtag">#hubble #galaxy #galacticjam</span>
+                    </div>    
+                </li>
+                <li class="last-item">
+                    <div class="img-wrap"><img class="last-img" src="in/images/pia23408.jpg" alt=""></div>
+                    <button type="button" class="stars star-regular  "> </button>
+                    <div class="last-caption">
+                        <p class='last-paragraph'>TESS Finds First Earth-size Planet in the Habitavle Zone</p>
+                        <span class="last-hashtag">#tess #planet</span>
+                    </div>
+                </li>
+            </ul>
+            <aside class="banner"></aside>
+        </div>
+        </section>
+        <script>
+        let stars = document.querySelectorAll('.stars');
+        for(let star of stars){
+            star.onclick=function(){
+                star.classList.toggle('star-regular');
+                star.classList.toggle('star-solid');
+          }
+    }
+        </script>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
